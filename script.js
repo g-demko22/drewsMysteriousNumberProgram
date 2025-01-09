@@ -11,6 +11,7 @@ const conversionNums = [
 ]
 
 const submitButton = document.getElementById('submit')
+const resetButton = document.getElementById('reset')
 
 const calculateResponse = event => {
     const responseArr = [];
@@ -36,3 +37,4 @@ const calculateResponse = event => {
 }
 
 submitButton.addEventListener('click', calculateResponse)
+resetButton.addEventListener('click', event => window.location.reload())
